@@ -8,5 +8,19 @@ In 2014, the duo expanded their model to a 5-Factor Model, adding RMB (Robust Mi
 
 The respective factors for each model were used as features in a Machine Learning model, predictions were generated, and results were evaluated to determine which model, the 3-Factor or the 5-Factor model, was more effective on which to base trading signals. 
 
+## Fama-French Three-Factor Model:
+### 3-Factor Results (for ATT):
+
+ANOVA tables were generated utilizing statsmodels' Ordinary Least Squares (OLS) model, a model analogous to Linear Regressions.  The following is the ANOVA table generated for ATT's 3-Factor results:
+![att_3_factor_OLS](/Screenshots/att_3_factor_OLS.png?raw=true)
+
+ It is a visual representation of the 3-factor algorithm's cumulative returns vs. the underlying, aka buy-and-hold, return.  We see in the above plot that for ATT, our backtested strategy signficantly outperformed a simple buy-and-hold strategy; while our backtested strategy had positive returns, if you were to buy-and-hold, you would have lost money.
+ ![att_3_factor_plot_two](/Screenshots/att_3_factor_plot_two.png?raw=true)
+
+## Fama-French Five-Factor Model:
 Just like for the Three-Factor Model, ANOVA tables were generated utilizing statsmodels' Ordinary Least Squares (OLS) model, a model analogous to Linear Regressions.  The following is the ANOVA table generated for ATT's 5-Factor results:
 ![att_5_factor_OLS](/Screenshots/att_5_factor_OLS.png?raw=true)
+
+We see in the above plot that for ATT, our backtested strategy signficantly outperformed a simple buy-and-hold strategy; while our backtested strategy had positive returns, if you were to buy-and-hold, you would have lost money.  Interestingly, total cumulative returns for the Five-Factor Model were less than those of the Three-Factor Model.  
+![att_5_factor_plot_two](/Screenshots/att_5_factor_plot_two.png?raw=true)
+
