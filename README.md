@@ -7,3 +7,6 @@ The first model, the Three-Factor Model, is an asset pricing model developed in 
 In 2014, the duo expanded their model to a 5-Factor Model, adding RMB (Robust Minus Weak returns), a profitability factor, and CMA (Conservative Minus Aggressive returns), an investment factor.  In theory, these 2 additional factors should have a beneficial impact on being able to make predictions.  Yet, as we will see, there are interesting results when comparing the 3-Factor and 5-Factor returns.
 
 The respective factors for each model were used as features in a Machine Learning model, predictions were generated, and results were evaluated to determine which model, the 3-Factor or the 5-Factor model, was more effective on which to base trading signals. 
+
+Just like for the Three-Factor Model, ANOVA tables were generated utilizing statsmodels' Ordinary Least Squares (OLS) model, a model analogous to Linear Regressions.  The following is the ANOVA table generated for ATT's 5-Factor results:
+![att_5_factor_OLS](/Screenshots/att_5_factor_OLS.png?raw=true)
